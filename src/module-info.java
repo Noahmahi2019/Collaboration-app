@@ -1,5 +1,8 @@
 module Collaboration.app {
     requires javafx.fxml;
     requires javafx.controls;
-    opens sample;
+
+    opens com.schoolManagemntApplication;
+
+
 }
