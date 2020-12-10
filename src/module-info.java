@@ -3,6 +3,6 @@ module Collaboration.app {
     requires javafx.controls;
 
     opens com.schoolManagemntApplication;
-
+       
 
 }
