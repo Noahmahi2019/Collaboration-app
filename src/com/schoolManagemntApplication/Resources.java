@@ -1,5 +1,4 @@
 package com.schoolManagemntApplication;
 
-public class Controller {
+public class Resources {
 }
-
