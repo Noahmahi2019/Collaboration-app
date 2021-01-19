@@ -1,4 +1,7 @@
 package com.schoolManagemntApplication;
 
-public class Student {
+import javafx.scene.layout.AnchorPane;
+
+public class StudentController {
+    public AnchorPane studentAnchorPane;
 }

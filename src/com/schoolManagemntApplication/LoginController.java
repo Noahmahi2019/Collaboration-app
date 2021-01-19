@@ -1,4 +1,4 @@
 package com.schoolManagemntApplication;
 
-public class Login {
+public class LoginController {
 }
