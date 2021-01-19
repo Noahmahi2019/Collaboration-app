@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.RegisterToNewCourseController">
+    <TextField fx:id="Ok" layoutX="96.0" layoutY="177.0" prefHeight="40.0" prefWidth="203.0" promptText=" Enter Id">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </TextField>
+    <Label layoutX="131.0" layoutY="217.0" prefHeight="28.0" prefWidth="91.0" text="    Course Id :">
+        <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+        </font>
+    </Label>
+    <Label alignment="TOP_LEFT" layoutX="148.0" layoutY="284.0" text="Course Name : " textFill="black">
+        <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+        </font>
+    </Label>
+    <ComboBox layoutX="96.0" layoutY="244.0" prefHeight="40.0" prefWidth="203.0" promptText="Select Course ">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:id="1" fx:value="Java" />
+                <String fx:id="2" fx:value="Python" />
+                <String fx:id="3" fx:value="JavaScript" />
+                <String fx:id="4" fx:value="C" />
+                <String fx:id="5" fx:value="C++" />
+            </FXCollections>
+        </items>
+        <!--        <Label text="Course Schedule" layoutX="347.0" layoutY="100.0" prefHeight="100.0" prefWidth="213.0" GridPane.rowIndex="0" alignment="TOP_LEFT" GridPane.columnIndex="0" textFill="black" GridPane.columnSpan="2" style="-fx-background-color:white"/>-->
+    </ComboBox>
+    <Label alignment="TOP_LEFT" layoutX="138.0" layoutY="353.0" prefWidth="120.0" text="Instructor Name : " textFill="black">
+        <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+        </font>
+    </Label>
+    <ComboBox layoutX="96.0" layoutY="313.0" prefHeight="40.0" prefWidth="203.0" promptText=" Select instructor">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:id="t1" fx:value="instructor1" />
+                <String fx:id="t2" fx:value="instructor2" />
+                <String fx:id="t3" fx:value="instructor3" />
+                <String fx:id="t4" fx:value="instructor4" />
+                <String fx:id="t5" fx:value="instructor5" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Label layoutX="169.0" layoutY="423.0" prefHeight="28.0" prefWidth="78.0" text="Calendar  : " textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS">
+        <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+        </font>
+    </Label>
+    <DatePicker layoutX="98.0" layoutY="383.0" prefHeight="40.0" prefWidth="200.0" promptText="    Enter Date" />
+    <Button layoutX="408.0" layoutY="496.0" mnemonicParsing="false" onAction="#showokwindow" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: #2D75E8;" text="Ok">
+        <!--    <Button fx:id="OKButton" defaultButton="true" layoutX="305.0" layoutY="454.0" onAction="#showsignupwindow" onMouseClicked="#ok" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: #2D75E8;" text="Ok">-->
+        <font>
+            <Font name="Times New Roman" size="15.0" />
+        </font>
+    </Button>
+    <Button fx:id="CancelButton" defaultButton="true" layoutX="520.0" layoutY="496.0" onAction="#onCancel" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: #2D75E8;" text="Cancel" AnchorPane.topAnchor="496.0">-->
+
+                    <font>
+            <Font name="Times New Roman" size="15.0" />
+        </font>
+    </Button>
+    <Pane prefHeight="129.0" prefWidth="682.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Label layoutX="246.0" layoutY="65.0" prefHeight="28.0" prefWidth="203.0" text="Rester To New Course " textFill="#fefefe">
+                <font>
+                    <Font name="Times New Roman Bold" size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="95.0" prefHeight="17.0" prefWidth="165.0" text="School Management System" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="10.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="110.0" fitWidth="158.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="110.0" fitWidth="158.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@logos.jpg" />
+                </image>
+            </ImageView>
+        </children>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding></Pane>
+    <Label layoutX="282.0" layoutY="140.0" prefHeight="23.0" prefWidth="165.0" text="Add New Course ">
+        <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+        </font>
+    </Label>
+    <Pane layoutX="337.0" layoutY="163.0" prefHeight="311.0" prefWidth="325.0" style="-fx-background-color: #FEFEFE;">
+        <children>
+            <RadioButton layoutX="56.0" layoutY="47.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="78.0" text="Credit" />
+            <Label layoutX="98.0" layoutY="14.0" prefHeight="25.0" prefWidth="158.0" text="Payment Method">
+                <font>
+                    <Font name="Times New Roman Bold" size="17.0" />
+                </font>
+            </Label>
+            <RadioButton layoutX="167.0" layoutY="47.0" mnemonicParsing="false" text="Debit" />
+            <Label layoutX="10.0" layoutY="85.0" prefHeight="40.0" prefWidth="158.0" text=" Cardholder Name :  ">
+                <font>
+                    <Font name="Times New Roman Bold" size="15.0" />
+                </font>
+            </Label>
+            <Line endX="145.0" layoutX="156.0" layoutY="125.0" startX="-146.00003051757812" />
+            <Label layoutX="12.0" layoutY="142.0" prefHeight="40.0" prefWidth="120.0" text="Card Number  :">
+                <font>
+                    <Font name="Times New Roman Bold" size="15.0" />
+                </font>
+            </Label>
+            <Line endX="149.0" layoutX="156.0" layoutY="182.0" startX="-146.33334350585938" />
+            <Label layoutX="15.0" layoutY="198.0" prefHeight="40.0" prefWidth="149.0" text="EXP.Date : ">
+                <font>
+                    <Font name="Times New Roman Bold" size="15.0" />
+                </font>
+            </Label>
+            <Line endX="19.3333740234375" layoutX="139.0" layoutY="238.0" startX="-129.00003051757812" />
+            <Label layoutX="188.0" layoutY="203.0" prefHeight="30.0" prefWidth="49.0" text="    cvv :">
+                <font>
+                    <Font name="Times New Roman Bold" size="15.0" />
+                </font>
+            </Label>
+            <Line endX="67.0" layoutX="236.0" layoutY="238.0" startX="-39.0" />
+            <Label layoutX="155.0" layoutY="252.0" onMouseClicked="#payAlert" prefHeight="20.0" prefWidth="67.0" text="Pay">
+                <font>
+                    <Font name="Times New Roman Bold" size="17.0" />
+                </font>
+            </Label>
+            <TextField fx:id="name" layoutX="154.0" layoutY="90.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FEFEFE;" />
+         <TextField fx:id="cardNumber" layoutX="142.0" layoutY="147.0" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: #FEFEFE;" />
+         <TextField fx:id="expDate" layoutX="95.0" layoutY="203.0" prefHeight="1.0" prefWidth="78.0" style="-fx-background-color: #FEFEFE;" />
+         <TextField fx:id="cvv" layoutX="241.0" layoutY="203.0" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #FEFEFE;" />
+         <Label layoutY="282.0" prefHeight="25.0" prefWidth="319.0" />
+        </children>
+    </Pane>
+
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.Resources">
+    <children>
+        <AnchorPane layoutX="-7.0" prefHeight="143.0" prefWidth="677.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label layoutX="283.0" layoutY="74.0" prefHeight="27.0" prefWidth="112.0" text="Resources" textFill="#fefefe">
+                    <font>
+                        <Font name="Times New Roman Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="255.0" layoutY="102.0" prefHeight="17.0" prefWidth="168.0" text="School Management System" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="123.0" fitWidth="168.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logos.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

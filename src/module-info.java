@@ -4,6 +4,6 @@ module Collaboration.app {
     requires java.sql;
 
     opens com.schoolManagemntApplication;
-
+       
 
 }
