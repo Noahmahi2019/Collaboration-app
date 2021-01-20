@@ -9,7 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.Controller">
+<AnchorPane  fx:controller="com.schoolManagemntApplication.InstructorControllerLogin"
+             xmlns:fx="http://javafx.com/fxml" fx:id="mainAnchorPane" xmlns="http://javafx.com/javafx/11.0.1"
+             maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" >
 
     <children>
         <Pane layoutY="-52.0" prefHeight="252.0" prefWidth="980.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-52.0">
@@ -41,21 +43,21 @@
                 </Label>
                 <Label layoutX="21.0" layoutY="279.0" prefHeight="17.0" prefWidth="108.0" text="Sign in to continue" />
                 <Label layoutX="27.0" layoutY="313.0" prefHeight="17.0" prefWidth="74.0" text="UserName :" />
-                <TextField layoutX="130.0" layoutY="309.0" text="" />
+                <TextField layoutX="130.0" layoutY="309.0" />
                 <Label layoutX="27.0" layoutY="389.0" prefHeight="17.0" prefWidth="62.0" text="Password :" />
-                <TextField layoutX="130.0" layoutY="385.0" text=""/>
+                <TextField layoutX="130.0" layoutY="385.0" />
                 <Button layoutX="21.0" layoutY="441.0" mnemonicParsing="false" onAction="#showloginwindow" prefHeight="37.0" prefWidth="302.0" style="-fx-background-color: #2D75E8;" text="Login">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Button>
                 <Label layoutX="402.0" layoutY="447.0" prefHeight="25.0" prefWidth="68.0" text="New User?" />
-                <Button layoutX="486.0" layoutY="447.0" mnemonicParsing="false" onAction="#showsignupwindow" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2D75E8;" text="Sign Up">
+                <Button layoutX="486.0" layoutY="447.0" mnemonicParsing="false" onAction="#showSignUpwindow" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2D75E8;" text="Sign Up">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-                <Button layoutX="452.0" layoutY="406.0" mnemonicParsing="false" onAction="#showForgetPasswindow" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #2D75E8;" text="Forgot Password?" />
+                <Button layoutX="452.0" layoutY="406.0" mnemonicParsing="false" onAction="#showInstructorForgetPasswindow" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #2D75E8;" text="Forgot Password?" />
                 <Label layoutX="27.0" layoutY="355.0" prefHeight="17.0" prefWidth="62.0" text="Email :" />
                 <TextField layoutX="130.0" layoutY="351.0" />
             </children>

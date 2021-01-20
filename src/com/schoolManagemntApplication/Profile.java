@@ -14,9 +14,11 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 public class Profile {
 
@@ -34,7 +36,6 @@ public class Profile {
     @FXML
     private TextField CellPhone;
 
-
     @FXML
     public void StudentProfileWindow(ActionEvent event) throws IOException {
         try {
@@ -42,22 +43,22 @@ public class Profile {
             Parent root = (Parent) loader.load();
 
 
-//            StudentProfile.StudentController studentProfile = loader.getController();
-//            studentProfile.myFunction(FirstName.getText());
-//            studentProfile.myFunction(LastName.getText());
-//            studentProfile.myFunction(StudentId.getText());
-//            studentProfile.myFunction(EmailAddress.getText());
-//            studentProfile.myFunction(Address.getText());
-//            studentProfile.myFunction(CellPhone.getText());
-//
-//            Stage stage = new Stage();
-//            stage.setScene(new Scene(root));
-//            stage.show();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//}
+            StudentProfile.StudentController studentProfile = loader.getController();
+            studentProfile.myFunction(FirstName.getText());
+            studentProfile.myFunction(LastName.getText());
+            studentProfile.myFunction(StudentId.getText());
+            studentProfile.myFunction(EmailAddress.getText());
+            studentProfile.myFunction(Address.getText());
+            studentProfile.myFunction(CellPhone.getText());
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 //
 //        FXMLLoader fxmlLoader = new FXMLLoader();
 //        fxmlLoader.setLocation(getClass().getResource("second.fxml"));
@@ -104,6 +105,31 @@ public class Profile {
 ////
 ////    }
 ////}
+
+    public void CreateButtonClicked(MouseEvent actionEvent) throws IOException {
+        Parent home_page_parent = FXMLLoader.load(getClass().getResource("StudentProfile.fxml"));
+        Scene home_page_scene = new Scene(home_page_parent);
+        Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        app_stage.hide(); //optional
+        app_stage.setScene(home_page_scene);
+        app_stage.show();
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/schoolManagemntApplication/StudentProfile"));
+            Parent root = (Parent) loader.load();
+
+
+            StudentProfile.StudentController studentProfile = loader.getController();
+            studentProfile.myFunction(FirstName.getText());
+            studentProfile.myFunction(LastName.getText());
+            studentProfile.myFunction(StudentId.getText());
+            studentProfile.myFunction(EmailAddress.getText());
+            studentProfile.myFunction(Address.getText());
+            studentProfile.myFunction(CellPhone.getText());
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
