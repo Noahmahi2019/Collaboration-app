@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
-<?import javafx.collections.FXCollections?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="544.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.MyCourses">
+<AnchorPane prefHeight="517.0" prefWidth="755.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.MyCourses">
         <TextField fx:id="Ok" layoutX="303.0" layoutY="209.0" onAction="#showOkwindow" prefHeight="38.0" prefWidth="203.0" promptText=" Enter Id">
             <font>
                 <Font size="13.0" />
@@ -53,12 +48,12 @@
         </Button>
         <Pane prefHeight="130.0" prefWidth="650.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <children>
-                <Label layoutX="260.0" layoutY="61.0" prefHeight="28.0" prefWidth="158.0" text="My Courses" textFill="#fefefe">
+                <Label layoutX="306.0" layoutY="61.0" prefHeight="28.0" prefWidth="158.0" text="My Courses" textFill="#fefefe">
                     <font>
-                        <Font name="Times New Roman Bold" size="20.0" />
+                        <Font name="Times New Roman Bold" size="23.0" />
                     </font>
                 </Label>
-                <Label layoutX="260.0" layoutY="89.0" prefHeight="17.0" prefWidth="165.0" text="School Management System" textFill="WHITE">
+                <Label layoutX="299.0" layoutY="89.0" prefHeight="17.0" prefWidth="165.0" text="School Management System" textFill="WHITE">
                     <font>
                         <Font name="Times New Roman Bold" size="10.0" />
                     </font>
@@ -70,5 +65,12 @@
                     </image>
                 </ImageView>
             </children></Pane>
-
-    </AnchorPane>
+    <Label layoutX="26.0" layoutY="478.0" onMousePressed="#PreviousButtonClicks" prefHeight="21.0" prefWidth="80.0" text="Previous">
+            <Font name="Times New Roman Bold" size="19.0" />
+    </Label>
+    <Label layoutX="653.0" layoutY="478.0" onMousePressed="#nextButtonClicks" prefHeight="20.0" prefWidth="80.0" text="     Next">
+        <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+        </font>
+    </Label>
+        </AnchorPane>

@@ -16,23 +16,23 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="568.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.RegisterToNewCourseController">
-    <TextField fx:id="Ok" layoutX="96.0" layoutY="177.0" prefHeight="40.0" prefWidth="203.0" promptText=" Enter Id">
+<AnchorPane prefHeight="612.0" prefWidth="860.0" style="-fx-background-color: #FEFEFE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolManagemntApplication.RegisterToNewCourseController">
+    <TextField fx:id="Ok" layoutX="232.0" layoutY="207.0" prefHeight="40.0" prefWidth="203.0" promptText=" Enter Id">
         <font>
             <Font size="13.0" />
         </font>
     </TextField>
-    <Label layoutX="131.0" layoutY="217.0" prefHeight="28.0" prefWidth="91.0" text="    Course Id :">
+    <Label layoutX="95.0" layoutY="213.0" prefHeight="28.0" prefWidth="120.0" text="    Course Id :">
         <font>
-            <Font name="Times New Roman Bold" size="15.0" />
+            <Font name="Times New Roman Bold" size="17.0" />
         </font>
     </Label>
-    <Label alignment="TOP_LEFT" layoutX="148.0" layoutY="284.0" text="Course Name : " textFill="black">
+    <Label alignment="TOP_LEFT" layoutX="100.0" layoutY="281.0" text="Course Name : " textFill="black">
         <font>
-            <Font name="Times New Roman Bold" size="15.0" />
+            <Font name="Times New Roman Bold" size="17.0" />
         </font>
     </Label>
-    <ComboBox layoutX="96.0" layoutY="244.0" prefHeight="40.0" prefWidth="203.0" promptText="Select Course ">
+    <ComboBox layoutX="232.0" layoutY="271.0" prefHeight="40.0" prefWidth="203.0" promptText="Select Course ">
         <items>
             <FXCollections fx:factory="observableArrayList">
                 <String fx:id="1" fx:value="Java" />
@@ -44,12 +44,12 @@
         </items>
         <!--        <Label text="Course Schedule" layoutX="347.0" layoutY="100.0" prefHeight="100.0" prefWidth="213.0" GridPane.rowIndex="0" alignment="TOP_LEFT" GridPane.columnIndex="0" textFill="black" GridPane.columnSpan="2" style="-fx-background-color:white"/>-->
     </ComboBox>
-    <Label alignment="TOP_LEFT" layoutX="138.0" layoutY="353.0" prefWidth="120.0" text="Instructor Name : " textFill="black">
+    <Label alignment="TOP_LEFT" layoutX="75.0" layoutY="349.0" prefHeight="20.0" prefWidth="141.0" text="Instructor Name : " textFill="black">
         <font>
-            <Font name="Times New Roman Bold" size="15.0" />
+            <Font name="Times New Roman Bold" size="17.0" />
         </font>
     </Label>
-    <ComboBox layoutX="96.0" layoutY="313.0" prefHeight="40.0" prefWidth="203.0" promptText=" Select instructor">
+    <ComboBox layoutX="232.0" layoutY="339.0" prefHeight="40.0" prefWidth="203.0" promptText=" Select instructor">
         <items>
             <FXCollections fx:factory="observableArrayList">
                 <String fx:id="t1" fx:value="instructor1" />
@@ -60,34 +60,33 @@
             </FXCollections>
         </items>
     </ComboBox>
-    <Label layoutX="169.0" layoutY="423.0" prefHeight="28.0" prefWidth="78.0" text="Calendar  : " textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS">
+    <Label layoutX="95.0" layoutY="415.0" prefHeight="28.0" prefWidth="120.0" text="Calendar  : " textAlignment="JUSTIFY" textOverrun="LEADING_ELLIPSIS">
         <font>
-            <Font name="Times New Roman Bold" size="15.0" />
+            <Font name="Times New Roman Bold" size="17.0" />
         </font>
     </Label>
-    <DatePicker layoutX="98.0" layoutY="383.0" prefHeight="40.0" prefWidth="200.0" promptText="    Enter Date" />
-    <Button layoutX="408.0" layoutY="496.0" mnemonicParsing="false" onAction="#showokwindow" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: #2D75E8;" text="Ok">
+    <DatePicker layoutX="232.0" layoutY="409.0" prefHeight="40.0" prefWidth="203.0" promptText="    Enter Date" />
+    <Button layoutX="385.0" layoutY="520.0" mnemonicParsing="false" onAction="#showokwindow" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: #2D75E8;" text="Ok">
         <!--    <Button fx:id="OKButton" defaultButton="true" layoutX="305.0" layoutY="454.0" onAction="#showsignupwindow" onMouseClicked="#ok" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: #2D75E8;" text="Ok">-->
         <font>
             <Font name="Times New Roman" size="15.0" />
         </font>
     </Button>
-    <Button fx:id="CancelButton" defaultButton="true" layoutX="520.0" layoutY="496.0" onAction="#onCancel" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: #2D75E8;" text="Cancel" AnchorPane.topAnchor="496.0">-->
-
-                    <font>
+    <Button fx:id="CancelButton" defaultButton="true" layoutX="515.0" layoutY="520.0" onAction="#onCancel" prefHeight="28.0" prefWidth="107.0" style="-fx-background-color: #2D75E8;" text="Cancel" AnchorPane.topAnchor="520.0">
+        <font>
             <Font name="Times New Roman" size="15.0" />
         </font>
     </Button>
     <Pane prefHeight="129.0" prefWidth="682.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <children>
-            <Label layoutX="246.0" layoutY="65.0" prefHeight="28.0" prefWidth="203.0" text="Rester To New Course " textFill="#fefefe">
+            <Label layoutX="333.0" layoutY="51.0" prefHeight="28.0" prefWidth="266.0" text="Register To New Course " textFill="#fefefe">
                 <font>
-                    <Font name="Times New Roman Bold" size="20.0" />
+                    <Font name="Times New Roman Bold" size="24.0" />
                 </font>
             </Label>
-            <Label layoutX="256.0" layoutY="95.0" prefHeight="17.0" prefWidth="165.0" text="School Management System" textFill="WHITE">
+            <Label layoutX="365.0" layoutY="79.0" prefHeight="18.0" prefWidth="203.0" text="School Management System" textFill="WHITE">
                 <font>
-                    <Font name="Times New Roman Bold" size="10.0" />
+                    <Font name="Times New Roman Bold" size="15.0" />
                 </font>
             </Label>
             <ImageView fitHeight="110.0" fitWidth="158.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
@@ -100,20 +99,20 @@
       <padding>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </padding></Pane>
-    <Label layoutX="282.0" layoutY="140.0" prefHeight="23.0" prefWidth="165.0" text="Add New Course ">
+    <Label layoutX="386.0" layoutY="147.0" prefHeight="23.0" prefWidth="222.0" text="Add New Course ">
         <font>
-            <Font name="Times New Roman Bold" size="20.0" />
+            <Font name="Times New Roman Bold" size="25.0" />
         </font>
     </Label>
-    <Pane layoutX="337.0" layoutY="163.0" prefHeight="311.0" prefWidth="325.0" style="-fx-background-color: #FEFEFE;">
+    <Pane layoutX="497.0" layoutY="190.0" prefHeight="317.0" prefWidth="358.0" style="-fx-background-color: #FEFEFE;">
         <children>
-            <RadioButton layoutX="56.0" layoutY="47.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="78.0" text="Credit" />
-            <Label layoutX="98.0" layoutY="14.0" prefHeight="25.0" prefWidth="158.0" text="Payment Method">
+            <RadioButton layoutX="72.0" layoutY="47.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="78.0" text="Credit" />
+            <Label layoutX="98.0" layoutY="14.0" prefHeight="25.0" prefWidth="176.0" text="Payment Method">
                 <font>
-                    <Font name="Times New Roman Bold" size="17.0" />
+                    <Font name="Times New Roman Bold" size="22.0" />
                 </font>
             </Label>
-            <RadioButton layoutX="167.0" layoutY="47.0" mnemonicParsing="false" text="Debit" />
+            <RadioButton layoutX="208.0" layoutY="47.0" mnemonicParsing="false" text="Debit" />
             <Label layoutX="10.0" layoutY="85.0" prefHeight="40.0" prefWidth="158.0" text=" Cardholder Name :  ">
                 <font>
                     <Font name="Times New Roman Bold" size="15.0" />
@@ -150,5 +149,15 @@
          <Label layoutY="282.0" prefHeight="25.0" prefWidth="319.0" />
         </children>
     </Pane>
+   <Label layoutX="21.0" layoutY="573.0" prefHeight="20.0" prefWidth="67.0" text="Previous" onMouseClicked="#previousButtonClicks">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="789.0" layoutY="573.0" prefHeight="20.0" prefWidth="49.0" text="Next" onMouseClicked="#nextButtonClicks">
+      <font>
+         <Font name="Times New Roman Bold" size="15.0" />
+      </font>
+   </Label>
 
 </AnchorPane>

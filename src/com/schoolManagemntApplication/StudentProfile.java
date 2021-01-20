@@ -31,17 +31,17 @@ public class StudentProfile {
 
     public class StudentController implements Initializable {
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+        public void initialize(URL location, ResourceBundle resources) {
 
-    }
-       public void myFunction(String text){
-        LabelFirstName.setText(text);
-        LabelLastName.setText(text);
-        LabelId.setText(text);
-        LabelEmail.setText(text);
-        LabelAddress.setText(text);
-        LabelCellPhone.setText(text);
+        }
+
+        public void myFunction(String text) {
+            LabelFirstName.setText(text);
+            LabelLastName.setText(text);
+            LabelId.setText(text);
+            LabelEmail.setText(text);
+            LabelAddress.setText(text);
+            LabelCellPhone.setText(text);
 
 
 //        name.setText(Storage.getName());
@@ -62,10 +62,8 @@ public class StudentProfile {
         }
 
 
-
     }
-    }
-
+}
 //        private final String text_File_Location;
 //        private long count;
 //

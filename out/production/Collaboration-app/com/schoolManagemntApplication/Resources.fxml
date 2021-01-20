@@ -27,5 +27,10 @@
             </ImageView>
             </children>
         </AnchorPane>
+      <Label layoutX="15.0" layoutY="500.0" prefHeight="20.0" prefWidth="65.0" text="previous" onMouseClicked="#previousButtonClicked">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
